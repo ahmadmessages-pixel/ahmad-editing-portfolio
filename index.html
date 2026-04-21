@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">My Portfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="themeToggleBtn" class="theme-toggle-btn" type="button" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+        <span>Dark</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-content">
+        <p class="hero-tag">Hello, I am</p>
+        <h2><span class="highlight-name">Ahmad</span></h2>
+        <p class="typing-line">
+          I am a <span id="typingText" class="typing-text"></span>
+        </p>
+        <p class="hero-intro">
+          I’m a professional video editor and motion designer. I focus on
+          storytelling, pacing, clean cuts, and color to make every frame
+          impactful.
+        </p>
+        <a class="cta-button" href="#project">View My Projects</a>
+      </div>
+      <div class="hero-image-wrap">
+        <img
+          class="hero-image"
+          src="file:///C:/Users/Ahmad/.cursor/projects/c-Users-Ahmad-Desktop-editing-protfolio/assets/c__Users_Ahmad_AppData_Roaming_Cursor_User_workspaceStorage_b1b3f7d229f67c27617eaddf3e322e13_images_Gemini_Generated_Image_o3hjaqo3hjaqo3hj-7333ecc4-a7b6-4a56-9670-28d39b134b3a.png"
+          alt="Profile picture"
+        />
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <h2>About</h2>
+      <p>
+        I'm a professional video editor and motion designer with a passion for
+        turning ideas into compelling visuals. From cutting and pacing to color
+        and motion, I focus on clarity and impact so every frame serves the
+        story.
+      </p>
+      <h3>Skills</h3>
+      <ul>
+        <li>Video Editing</li>
+        <li>Storytelling</li>
+        <li>Color Grading</li>
+        <li>Motion Designing</li>
+      </ul>
+    </section>
+
+    <section id="project" class="container">
+      <h2>Projects</h2>
+      <p>Some of my featured editing and motion design work.</p>
+      <div class="projects-grid">
+        <article class="project-card">
+          <a
+            class="project-card-link"
+            href="https://drive.google.com/drive/folders/1rlkCaSENmVSvPImY4MCa1ci59LNGEQhT?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open YouTube Story Cut on Google Drive"
+          >
+            <img
+              class="project-thumb"
+              src="https://picsum.photos/seed/youtube-story-cut/900/600"
+              alt="YouTube Story Cut project preview"
+            />
+            <h3>YouTube Video</h3>
+            <p>
+              Narrative-driven YouTube episode focused on pacing, retention, and
+              emotion.
+            </p>
+          </a>
+          <div class="project-tags">
+            <span>Editing</span>
+            <span>Storytelling</span>
+            <span>YouTube</span>
+          </div>
+          <a
+            class="project-link"
+            href="https://drive.google.com/drive/folders/1rlkCaSENmVSvPImY4MCa1ci59LNGEQhT?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+        </article>
+        <article class="project-card">
+          <a
+            class="project-card-link"
+            href="https://drive.google.com/drive/folders/1u9iJ3IhOEwP2geRqiuqll5ojv8DzIl0P?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Color Grading Reel on Google Drive"
+          >
+            <img
+              class="project-thumb"
+              src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=900&q=80"
+              alt="Color Grading Reel project preview"
+            />
+            <h3>Color Grading Reel</h3>
+            <p>
+              Before/after grading showcase with custom LUT style and skin tone
+              balancing.
+            </p>
+          </a>
+          <div class="project-tags">
+            <span>Color Grading</span>
+            <span>LUT</span>
+            <span>DaVinci Resolve</span>
+          </div>
+          <a
+            class="project-link"
+            href="https://drive.google.com/drive/folders/1u9iJ3IhOEwP2geRqiuqll5ojv8DzIl0P?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+        </article>
+        <article class="project-card">
+          <a
+            class="project-card-link"
+            href="https://drive.google.com/drive/folders/1imJYv9pOBCNxomhu0iMR9eZE_HdiV1Sa?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Motion Graphics Intro on Google Drive"
+          >
+            <img
+              class="project-thumb"
+              src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=900&q=80"
+              alt="Motion Graphics Intro project preview"
+            />
+            <h3>Motion Design</h3>
+            <p>
+              Animated title sequence with typography, shape animation, and logo
+              reveal.
+            </p>
+          </a>
+          <div class="project-tags">
+            <span>Motion Design</span>
+            <span>Animation</span>
+            <span>Logo Reveal</span>
+          </div>
+          <a
+            class="project-link"
+            href="https://drive.google.com/drive/folders/1imJYv9pOBCNxomhu0iMR9eZE_HdiV1Sa?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+        </article>
+        <article class="project-card">
+          <a
+            class="project-card-link"
+            href="https://drive.google.com/drive/folders/1smmQcKph4SoOS5IINr2FdV4IVZAqPXVc?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Social Media Highlights on Google Drive"
+          >
+            <img
+              class="project-thumb"
+              src="https://images.unsplash.com/photo-1616469829941-c7200edec809?auto=format&fit=crop&w=900&q=80"
+              alt="Social Media Highlights project preview"
+            />
+            <h3>Short Form Edit</h3>
+            <p>
+              Short-form vertical highlights optimized for Instagram and YouTube
+              Shorts.
+            </p>
+          </a>
+          <div class="project-tags">
+            <span>Reels</span>
+            <span>Shorts</span>
+            <span>Vertical Video</span>
+          </div>
+          <a
+            class="project-link"
+            href="https://drive.google.com/drive/folders/1smmQcKph4SoOS5IINr2FdV4IVZAqPXVc?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Get In Touch</h2>
+      <p class="contact-subtitle">
+        I'd love to hear from you! Fill out the form below.
+      </p>
+
+      <div class="contact-layout">
+        <form action="#" method="post" class="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+          />
+
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Project inquiry"
+            required
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Write your message..."
+            required
+          ></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+
+        <aside class="contact-sidebar" aria-label="Contact details">
+          <h3>Contact Details</h3>
+          <p class="contact-note">Available for freelance and collaboration projects.</p>
+          <address>
+            <p class="contact-detail-item">
+              <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+              <span class="contact-detail-text">
+                <strong>Email</strong>
+                <a href="mailto:ahmad.messages@gamil.com">ahmad.messages@gamil.com</a>
+              </span>
+            </p>
+            <p class="contact-detail-item">
+              <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+              <span class="contact-detail-text">
+                <strong>Phone</strong>
+                <a href="tel:8866930254">8866930254</a>
+              </span>
+            </p>
+          </address>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>Connect with me</p>
+    <div class="social-links">
+      <a href="#" aria-label="Instagram" title="Instagram"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a href="#" aria-label="YouTube" title="YouTube"
+        ><i class="fa-brands fa-youtube"></i
+      ></a>
+      <a href="#" aria-label="Twitter" title="Twitter"
+        ><i class="fa-brands fa-x-twitter"></i
+      ></a>
+      <a href="#" aria-label="Facebook" title="Facebook"
+        ><i class="fa-brands fa-facebook-f"></i
+when       ></a>
+    </div>
+  </footer>
+
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
