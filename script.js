@@ -1,4 +1,4 @@
-const projectCards = document.querySelectorAll(".project-card");
+const animatedCards = document.querySelectorAll(".project-card, .review-card");
 
 if ("IntersectionObserver" in window) {
   const cardObserver = new IntersectionObserver(
@@ -13,17 +13,18 @@ if ("IntersectionObserver" in window) {
     { threshold: 0.2 }
   );
 
-  projectCards.forEach((card, index) => {
+  animatedCards.forEach((card, index) => {
     card.style.transitionDelay = `${index * 80}ms`;
     cardObserver.observe(card);
   });
 } else {
-  projectCards.forEach((card) => card.classList.add("visible"));
+  animatedCards.forEach((card) => card.classList.add("visible"));
 }
 
 const fadeSections = [
   document.getElementById("about"),
   document.getElementById("project"),
+  document.getElementById("reviews"),
   document.getElementById("contact"),
 ].filter(Boolean);
 
